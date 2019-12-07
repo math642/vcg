@@ -1,0 +1,59 @@
+#formulario{
+	border-radius: 5px;
+}
+html{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+	border-image-width: 100%;
+	background-image: url(back.jpg);
+}
+#cardmenutittle1{
+	text-align: center;
+	border-radius: 5px;
+}
+#cardmenu1{
+	text-align: justify;
+}
+#cardmenutittle2{
+	text-align: center;
+	border-radius: 5px;
+}
+#cardmenu2{
+	text-align: justify;
+}
+#menu2{
+	float: bottom;
+}
+#cardforomulariotittle1{
+	text-align: center;
+	align-content: center;
+}
+#login1{
+	border-radius: 5px;
+}
+#login2{
+	border-radius: 5px 5px 0px 0px;
+}
+#EUA1{
+	border-radius: 5px 5px 0px 0px;
+}
+#EUA2{
+	border-radius: 0px 0px 5px 5px;
+	text-align: justify;
+}
+.cardt{
+	border-radius: 5px 5px 0px 0px;
+}
+.cardb{
+	border-radius: 0px 0px 5px 5px;
+}
+.cardbt{
+	border-radius: 5px 5px 5px 5px;
+}
+.cent{
+	text-align: center;
+}
+.just{
+	text-align: justify;
+}
