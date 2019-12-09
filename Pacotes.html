@@ -3,44 +3,160 @@
 <head>
     <title>VCG</title>
     <link rel="sortcut icon" href="favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/tamanhos.css">
 	
 </head>
 <body class="white">
-	<nav id="menu" class="navbar-fixed blue darken-2 row"> 
-		<div class="nav-wrapper left col push-s1"><img class="responsive-img" src="logo.png"></div>
-		<div class="col push-s4 nav-title ce">Pacotes</div>
-		<ul class="right nav-content">
-			<li class="btn-block blue darken-2 waves-effect waves-light"><a href="Lugares.html">Lugares</a></li>
-			<li class="btn-block blue darken-2 waves-effect waves-light"><a href="index.html">Menu inicial</a></li>
-			<li class="btn-block blue darken-2 waves-effect waves-light"><a href="Login.html">Fazer login</a></li>
-		</ul>
-    </nav>
-    <footer class="page-footer blue darken-4">
-			<div class="container">
-			    <div class="row">
-					<div class="col s7">
-				  		<h5 class="white-text">Siga-nos</h5>
-				  		<p class="grey-text text-lighten-4">Veja as notícias em sobre nos em:</p>
-				  		<a class="btn waves-effect waves-light blue darken-4" href=""><img class="responsive-img brand-logo" src="twi.png"> Twitter</a>
-				  		<a class="btn waves-effect waves-light blue darken-4" href=""><img class="responsive-img" src="insta.png"> Instagram</a>
-						<a class="btn waves-effect waves-light blue darken-4" href=""><img class="responsive-img" src="face.png"> Facebook</a>
-						<p class="grey-text text-lighten-4">Ajude nossa equipe a crescer:</p>
-						<a class="btn waves-effect waves-light blue darken-4" href=""><img class="responsive-img brand-logo" src="patreon.png"> Patreon</a>
-						<p class="grey-text text-lighten-4">Mesa de debates:</p>
-				  		<a class="btn waves-effect waves-light blue darken-4" href=""><img class="responsive-img brand-logo" src="patreon.png"> Github</a>
-					</div>
-					<div class="col s2"><h5>Desenvolvedores</h5>
-						<a class="waves-effect waves-light white-text" href=""><img class="responsive-img circle" src="netlin.png"> Netlin</a>
-						<a class="waves-effect waves-light white-text" href=""><img class="responsive-img circle" src="eu.png"> Matheus</a>
-						<a class="waves-effect waves-light white-text" href=""><img class="responsive-img circle" src="samyra.png"> Samyra</a>
-						<a class="waves-effect waves-light white-text" href=""><img class="responsive-img circle" src="leticia.png"> Letícia</a>
-					</div>
-			  	</div>
+	<nav id="menu" class="navbar blue darken-2">
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo"><img class="responsive-img" src="logo.png"></a>
+			<a>&nbsp;</a>
+			<ul class="right hide-on-med-and-down">
+				<li class="btn-block blue darken-2 waves-effect waves-light"><a href="Lugares.html">Lugares</a></li>
+				<li class="btn-block blue darken-2 waves-effect waves-light"><a href="index.html">Menu inicial</a></li>
+				<li class="btn-block blue darken-2 waves-effect waves-light"><a href="Login.html">Fazer login</a></li>
+			</ul>
+			<div class="hide-on-large-only cent mobile-menu blue darken-2 row">
+				<div class="btn-block cent col s4 blue darken-2 waves-effect waves-light"><a href="Lugares.html">Lugares</a></div>
+				<div class="btn-block cent col s4 blue darken-2 waves-effect waves-light"><a
+						href="Index.html">Menu inicial</a></div>
+				<div class="btn-block cent col s4 blue darken-2 waves-effect waves-light"><a href="Login.html">Fazer
+						login</a></div>
 			</div>
-			<div class="footer-copyright">
-			<div class="container">© 2019 VCG, All rights reserved.</div>
+		</div>
+	</nav>
+    <div class="row">
+         <div class="col offset-l4 l4 offset-m3 m6 offset-s1 s10">
+                <div class="card" id="login1">
+                    <div class="card-action blue lighten-2 white-text" id="login2">
+                        <h3>Formulário</h3>
+					</div>
+                    <div class="card-content">
+						<h4 class="blue lighten-2 white-text cent">Você quer viajar para:</h4>
+                        <div class="form-field blue-text switch">
+                            <form action="#">
+                                <p>
+                                <input name="cidade" value="nova york" type="radio" id="op1">
+                                <label class="with-gap" for="op1">Nova York</label>
+                                </p>
+                                <p>
+                                    <input name="cidade" value="Paris" type="radio" id="op3">
+                                    <label for="op3">Paris</label>
+                                </p>
+                                <p>
+                                    <input name="cidade" value="Toronto" type="radio" id="op4">
+                                    <label for="op4">Toronto</label>
+                                </p>
+                                <p>
+                                    <input name="cidade" value="Roma" type="radio" id="op5">
+                                    <label for="op5">Roma</label>
+                                </p>
+                            </form>
+						</div><br>
+						<h4 class="blue lighten-2 white-text cent">Você quer viajar de:</h4>
+						<div class="form-field blue-text switch">
+							<form action="#">
+								<p>
+									<input name="transporte" value="Cruzeiro" type="radio" id="op21">
+									<label class="with-gap" for="op21">Cruzeiro <em>+2000 R$</em></label>
+								</p>
+								<p>
+									<input name="transporte" value="Aviao" type="radio" id="op22">
+									<label for="op22">Avião <em>+1000 R$</em></label>
+								</p>
+							</form>
+						</div><br>
+						<h4 class="blue lighten-2 white-text cent">Marque o que você ira incluir no pacote</h4>
+						<div class="form-field blue-text switch">
+							<form action="#">
+								<p>
+									<input name="pct" class="filled-in" value="comida" type="checkbox" id="op31">
+									<label class="with-gap" for="op31">Comida sem limites <em>+900,00 R$</em></label>
+								</p>
+								<p>
+									<input name="pct" class="filled-in" value="hotel" type="checkbox" id="op32">
+									<label class="with-gap" for="op32">Hotel de luxo <em>+1000,00 R$</em></label>
+								</p>
+								<p>
+									<input name="pct" class="filled-in" value="servical" type="checkbox" id="op33">
+									<label class="with-gap" for="op33">Serviçal própio <em>+250,00 R$</em></label>
+								</p>
+								<p>
+									<input name="pct" class="filled-in" value="servico" type="checkbox" id="op34">
+									<label class="with-gap" for="op34">Serviços de estadia (massagem, acupuntura...) <em>+350,00 R$</em></label>
+								</p>
+								<p>
+									<input name="pct" class="filled-in" value="eventos" type="checkbox" id="op35">
+									<label class="with-gap" for="op35">Ir a eventos <em>+275,00 R$</em></label>
+							    </p>
+							</form>
+						</div><br>
+						<h4 class="blue lighten-2 white-text cent">Por favor nos mostre:</h4>
+						<div class="form-field blue-text switch">
+							<form action="#">
+								<p></p>
+									<label class="with-gap" for="op41">Sua idade: </label>
+									<input name="info" type="number" value="18" min="18" max="100" id="op41">
+								</p>
+								<p>
+									<label class="with-gap" for="op42">Seu nome: </label>
+									<input name="info" type="text" id="op42">
+								</p>
+								<p>
+									<div class="file-field input-field">
+									    <div class="btn blue">
+											<span>Identidade</span>
+											<input type="file">
+									    </div>
+									    <div class="file-path-wrapper">
+											<input class="file-path validate" type="text">
+										</div>
+									</div>
+								</p>
+							</form>
+						</div><br>
+                    	<div class="btn-large form-field blue lighten-2 white-text">Enviar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<footer class="page-footer blue darken-4">
+				<div class="container">
+					<div class="row">
+						<div class="col s12 l7">
+							<h5 class="white-text">Siga-nos</h5>
+							<p class="grey-text text-lighten-4">Veja as notícias em sobre nos em:</p>
+							<a class="btn social-button waves-effect waves-light blue darken-4" href=""><img class="responsive-img brand-logo"
+									src="twi.png"> Twitter</a>
+							<br class="hide-on-large-only" />
+							<a class="btn social-button waves-effect waves-light blue darken-4" href=""><img class="responsive-img"
+									src="insta.png"> Instagram</a>
+							<br class="hide-on-large-only" />
+							<a class="btn social-button waves-effect waves-light blue darken-4" href=""><img class="responsive-img"
+									src="face.png"> Facebook</a>
+							<p class="grey-text text-lighten-4">Ajude nossa equipe a crescer:</p>
+							<a class="btn waves-effect waves-light blue darken-4" href=""><img class="responsive-img brand-logo"
+									src="patreon.png"> Patreon</a>
+							<p class="grey-text text-lighten-4">Mesa de debates:</p>
+							<a class="btn waves-effect waves-light blue darken-4" href=""><img class="responsive-img brand-logo"
+									src="patreon.png"> Github</a>
+						</div>
+						<div class="col s12 l3">
+							<h5>Desenvolvedores</h5>
+							<a class="waves-effect waves-light white-text col" href=""><img class="responsive-img circle"
+									src="netlin.png">
+								<h5>Netlin</h5>
+							</a>
+							<a class="waves-effect waves-light white-text col" href=""><img class="responsive-img circle"
+									src="eu.png">
+								<h5>Matheus</h5>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<div class="container">© 2019 VCG, All rights reserved.</div>
 			</footer>
-</body>
+		</body>
 </html>

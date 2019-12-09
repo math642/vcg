@@ -57,9 +57,6 @@ body{
 .just{
 	text-align: justify;
 }
-.mobile-menu > ul > li > a > h4 {
- 	margin: 0;
-}
 .card-image {
 	max-height: 300px;
 }
@@ -68,5 +65,11 @@ body{
 	max-height: 300px;
 }
 .card-content p {
-	min-height: 106px;
+	min-height: 112px;
+}
+.social-button {
+	margin-top: 5px;
+}
+.card-space {
+	margin-bottom: 5px;
 }
